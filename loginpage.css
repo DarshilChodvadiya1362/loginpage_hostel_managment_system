@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background :#FFF8F8;
+}
+
+section
+{
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.imgBx
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+section .imgBx::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(225deg,#e91e63,#03a9f4); */
+    z-index: 1;
+    mix-blend-mode: screen;
+    /* object-fit: cover; */
+}
+section .imgBx img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+section .contentBx
+{
+    
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo-after
+{
+    
+    font-size: larger;
+    font-weight:bold;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+}
+
+section .contentBx .formBx
+{
+    width: 50%;
+    margin: 0px 0px 0px 60px;
+}
+
+section .contentBx .formBx h2
+{
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff4584;
+    display: inline-block;
+    letter-spacing: 1px;
+
+}
+
+section .contentBx .formBx .inputBx span
+{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color:#607d8b;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+/* .formBx .inputBx input
+{
+    font-weight: 100px;
+    padding: 10px 60px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px; 
+    color: #607d8b;
+    background: transparent;
+    border-radius: 10px
+} */
+
+.formBx .inputBx input
+{
+    font-weight: 100px;
+    padding: 10px 10px ;
+    width: 270px;
+    height: 43px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px; 
+    color: #607d8b;
+    background: transparent;
+    border-radius: 10px
+}
+
+
+.formBx .inputBx1 input
+{
+    outline: none;
+    margin-top: 18px;
+    /* padding: 12px; */
+    width: 110px;
+    height: 43px;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 10px
+}
+section .contentBx .formBx .inputBx1 input[type="submit"]
+{
+    background: #1E1E1E;
+    color:#fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+section .contentBx .formBx .inputBx1 input[type="submit"]:hover
+{
+    background :black;
+}
+
+
+
+section .contentBx .formBx .inputBx-P p
+{
+    color: #607d8b;
+    margin-top: 22px;
+}
+section .contentBx .formBx .inputBx-P p a
+{
+    color: #0000FF;
+} 
+section .contentBx .formBx h3{
+    color: #607d8b;
+    text-align: center;
+    margin: 80px 0 10px;
+    font-weight: 500;
+}
+
+/* section .contentBx .formBx .sci
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .contentBx .formBx .sci li{
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    background: #607d8b;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+} */
+
+@media(max-width:768px)
+{
+    /* section .imgBx
+    {
+        position: absolute;
+        top: 0;
+        width:100%;
+        height: 100%;
+    } */
+    section .contentBx
+    {
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100px;
+        height: 100%;
+        z-index: 1; */
+    }
+}
+
+
+
+.contentBx{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo{
+    margin-bottom: 65px;
+    margin-left: 55px;
+    
+}
+
+.logo-after{
+    text-align: center;
+}
+
+
+.formBx form{
+    margin-top: 35px;
+}
+
+.inputBx-SignIn{
+    margin-top: 22px;
+}
+
+.SignIn input{
+    width: 50px;
+    height: 22px;
+}
+
+.contentBx{
+    margin-left: 110px;
+}
+
